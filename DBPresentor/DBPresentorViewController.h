@@ -50,10 +50,29 @@ typedef void(^EXPresentorCustomLayoutBlock)(UIView *superView);
  */
 @property (nonatomic,assign) BOOL db_preferStatusBarHidden;
 
+/**
+ 默认使用API
+ CustomView默认居中布局
+
+ @param customView 自定义的View
+ @param presentStyle 显示时的动画当时
+ @param dismissStyle 隐藏时的动画方式
+ @return ViewController实例
+ */
 + (instancetype)makerWithCustomView:(UIView *)customView
                        presentStyle:(DBPresentorPresentStyle)presentStyle
                        dismissStyle:(DBPresentorDismissStyle)dismissStyle;
 
+/**
+ 默认使用API
+ CustomView自定义布局方式
+ 
+ @param customView 自定义的View
+ @param customLayout 布局回调，在这里尽兴CustomView的自定义布局
+ @param presentStyle 显示时的动画当时
+ @param dismissStyle 隐藏时的动画方式
+ @return ViewController实例
+ */
 + (instancetype)makerWithCustomView:(UIView *)customView
                        customLayout:(EXPresentorCustomLayoutBlock)customLayout
                        presentStyle:(DBPresentorPresentStyle)presentStyle
