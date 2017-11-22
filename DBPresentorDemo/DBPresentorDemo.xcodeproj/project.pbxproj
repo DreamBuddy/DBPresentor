@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E0098BA1FC532D500A5EE3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098B91FC532D500A5EE3A /* AppDelegate.m */; };
+		6E0098BD1FC532D500A5EE3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098BC1FC532D500A5EE3A /* ViewController.m */; };
+		6E0098C01FC532D500A5EE3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0098BE1FC532D500A5EE3A /* Main.storyboard */; };
+		6E0098C21FC532D500A5EE3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0098C11FC532D500A5EE3A /* Assets.xcassets */; };
+		6E0098C51FC532D500A5EE3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0098C31FC532D500A5EE3A /* LaunchScreen.storyboard */; };
+		6E0098C81FC532D500A5EE3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098C71FC532D500A5EE3A /* main.m */; };
+		6E0098DA1FC5330300A5EE3A /* DBPresentorContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098CF1FC5330300A5EE3A /* DBPresentorContainerViewController.m */; };
+		6E0098DB1FC5330300A5EE3A /* DBPresentorPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098D51FC5330300A5EE3A /* DBPresentorPresentAnimator.m */; };
+		6E0098DC1FC5330300A5EE3A /* DBPresentorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098D71FC5330300A5EE3A /* DBPresentorViewController.m */; };
+		6E0098DD1FC5330300A5EE3A /* DBPresentorDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098D81FC5330300A5EE3A /* DBPresentorDismissAnimator.m */; };
+		6E0098DE1FC5330300A5EE3A /* DBPresentorViewController+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098D91FC5330300A5EE3A /* DBPresentorViewController+Show.m */; };
+		6E0098E61FC5335800A5EE3A /* DBActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098E01FC5335700A5EE3A /* DBActionSheet.m */; };
+		6E0098E71FC5335800A5EE3A /* DBActionSheetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098E11FC5335700A5EE3A /* DBActionSheetConfig.m */; };
+		6E0098E81FC5335800A5EE3A /* DBActionSheetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098E21FC5335700A5EE3A /* DBActionSheetAction.m */; };
+		6E0098EC1FC5351700A5EE3A /* UIView+DBLiner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098EB1FC5351700A5EE3A /* UIView+DBLiner.m */; };
+		6E0098F31FC5896C00A5EE3A /* UIButton+DBActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0098F21FC5896C00A5EE3A /* UIButton+DBActionSheet.m */; };
+		9E9C8A468EB1C6CB9FC9268F /* libPods-DBPresentorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFF37B02021010EA86F91ED /* libPods-DBPresentorDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E0098B51FC532D500A5EE3A /* DBPresentorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBPresentorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0098B81FC532D500A5EE3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E0098B91FC532D500A5EE3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E0098BB1FC532D500A5EE3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6E0098BC1FC532D500A5EE3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E0098BF1FC532D500A5EE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E0098C11FC532D500A5EE3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E0098C41FC532D500A5EE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E0098C61FC532D500A5EE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0098C71FC532D500A5EE3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E0098CF1FC5330300A5EE3A /* DBPresentorContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPresentorContainerViewController.m; sourceTree = "<group>"; };
+		6E0098D01FC5330300A5EE3A /* DBPresentorPresentAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPresentorPresentAnimator.h; sourceTree = "<group>"; };
+		6E0098D11FC5330300A5EE3A /* DBPresentorConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPresentorConfig.h; sourceTree = "<group>"; };
+		6E0098D21FC5330300A5EE3A /* DBPresentorViewController+Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DBPresentorViewController+Show.h"; sourceTree = "<group>"; };
+		6E0098D31FC5330300A5EE3A /* DBPresentorDismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPresentorDismissAnimator.h; sourceTree = "<group>"; };
+		6E0098D41FC5330300A5EE3A /* DBPresentorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPresentorViewController.h; sourceTree = "<group>"; };
+		6E0098D51FC5330300A5EE3A /* DBPresentorPresentAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPresentorPresentAnimator.m; sourceTree = "<group>"; };
+		6E0098D61FC5330300A5EE3A /* DBPresentorContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPresentorContainerViewController.h; sourceTree = "<group>"; };
+		6E0098D71FC5330300A5EE3A /* DBPresentorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPresentorViewController.m; sourceTree = "<group>"; };
+		6E0098D81FC5330300A5EE3A /* DBPresentorDismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPresentorDismissAnimator.m; sourceTree = "<group>"; };
+		6E0098D91FC5330300A5EE3A /* DBPresentorViewController+Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DBPresentorViewController+Show.m"; sourceTree = "<group>"; };
+		6E0098E01FC5335700A5EE3A /* DBActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBActionSheet.m; sourceTree = "<group>"; };
+		6E0098E11FC5335700A5EE3A /* DBActionSheetConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBActionSheetConfig.m; sourceTree = "<group>"; };
+		6E0098E21FC5335700A5EE3A /* DBActionSheetAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBActionSheetAction.m; sourceTree = "<group>"; };
+		6E0098E31FC5335700A5EE3A /* DBActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBActionSheet.h; sourceTree = "<group>"; };
+		6E0098E41FC5335700A5EE3A /* DBActionSheetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBActionSheetConfig.h; sourceTree = "<group>"; };
+		6E0098E51FC5335700A5EE3A /* DBActionSheetAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBActionSheetAction.h; sourceTree = "<group>"; };
+		6E0098EA1FC5351700A5EE3A /* UIView+DBLiner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DBLiner.h"; sourceTree = "<group>"; };
+		6E0098EB1FC5351700A5EE3A /* UIView+DBLiner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DBLiner.m"; sourceTree = "<group>"; };
+		6E0098F11FC5896C00A5EE3A /* UIButton+DBActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DBActionSheet.h"; sourceTree = "<group>"; };
+		6E0098F21FC5896C00A5EE3A /* UIButton+DBActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DBActionSheet.m"; sourceTree = "<group>"; };
+		CEFF37B02021010EA86F91ED /* libPods-DBPresentorDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBPresentorDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45F4AD1F6D096D852581D08 /* Pods-DBPresentorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBPresentorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBPresentorDemo/Pods-DBPresentorDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E91B16306A659E834736C26D /* Pods-DBPresentorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBPresentorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBPresentorDemo/Pods-DBPresentorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E0098B21FC532D500A5EE3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9C8A468EB1C6CB9FC9268F /* libPods-DBPresentorDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E0098AC1FC532D500A5EE3A = {
+			isa = PBXGroup;
+			children = (
+				6E0098B71FC532D500A5EE3A /* DBPresentorDemo */,
+				6E0098B61FC532D500A5EE3A /* Products */,
+				A3018915068C712C3EC67FA9 /* Pods */,
+				9FE32D5BBE0C03F1F843EEDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E0098B61FC532D500A5EE3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E0098B51FC532D500A5EE3A /* DBPresentorDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E0098B71FC532D500A5EE3A /* DBPresentorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6E0098E91FC5351700A5EE3A /* DBLiner */,
+				6E0098DF1FC5335700A5EE3A /* DBActionSheet */,
+				6E0098CE1FC5330300A5EE3A /* DBPresentor */,
+				6E0098B81FC532D500A5EE3A /* AppDelegate.h */,
+				6E0098B91FC532D500A5EE3A /* AppDelegate.m */,
+				6E0098BB1FC532D500A5EE3A /* ViewController.h */,
+				6E0098BC1FC532D500A5EE3A /* ViewController.m */,
+				6E0098BE1FC532D500A5EE3A /* Main.storyboard */,
+				6E0098C11FC532D500A5EE3A /* Assets.xcassets */,
+				6E0098C31FC532D500A5EE3A /* LaunchScreen.storyboard */,
+				6E0098C61FC532D500A5EE3A /* Info.plist */,
+				6E0098C71FC532D500A5EE3A /* main.m */,
+			);
+			path = DBPresentorDemo;
+			sourceTree = "<group>";
+		};
+		6E0098CE1FC5330300A5EE3A /* DBPresentor */ = {
+			isa = PBXGroup;
+			children = (
+				6E0098D11FC5330300A5EE3A /* DBPresentorConfig.h */,
+				6E0098D61FC5330300A5EE3A /* DBPresentorContainerViewController.h */,
+				6E0098CF1FC5330300A5EE3A /* DBPresentorContainerViewController.m */,
+				6E0098D31FC5330300A5EE3A /* DBPresentorDismissAnimator.h */,
+				6E0098D81FC5330300A5EE3A /* DBPresentorDismissAnimator.m */,
+				6E0098D01FC5330300A5EE3A /* DBPresentorPresentAnimator.h */,
+				6E0098D51FC5330300A5EE3A /* DBPresentorPresentAnimator.m */,
+				6E0098D41FC5330300A5EE3A /* DBPresentorViewController.h */,
+				6E0098D71FC5330300A5EE3A /* DBPresentorViewController.m */,
+				6E0098D21FC5330300A5EE3A /* DBPresentorViewController+Show.h */,
+				6E0098D91FC5330300A5EE3A /* DBPresentorViewController+Show.m */,
+			);
+			name = DBPresentor;
+			path = ../../DBPresentor;
+			sourceTree = "<group>";
+		};
+		6E0098DF1FC5335700A5EE3A /* DBActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				6E0098E31FC5335700A5EE3A /* DBActionSheet.h */,
+				6E0098E01FC5335700A5EE3A /* DBActionSheet.m */,
+				6E0098E51FC5335700A5EE3A /* DBActionSheetAction.h */,
+				6E0098E21FC5335700A5EE3A /* DBActionSheetAction.m */,
+				6E0098E41FC5335700A5EE3A /* DBActionSheetConfig.h */,
+				6E0098E11FC5335700A5EE3A /* DBActionSheetConfig.m */,
+				6E0098F11FC5896C00A5EE3A /* UIButton+DBActionSheet.h */,
+				6E0098F21FC5896C00A5EE3A /* UIButton+DBActionSheet.m */,
+			);
+			name = DBActionSheet;
+			path = ../../DBActionSheet;
+			sourceTree = "<group>";
+		};
+		6E0098E91FC5351700A5EE3A /* DBLiner */ = {
+			isa = PBXGroup;
+			children = (
+				6E0098EA1FC5351700A5EE3A /* UIView+DBLiner.h */,
+				6E0098EB1FC5351700A5EE3A /* UIView+DBLiner.m */,
+			);
+			name = DBLiner;
+			path = ../../DBLiner;
+			sourceTree = "<group>";
+		};
+		9FE32D5BBE0C03F1F843EEDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF37B02021010EA86F91ED /* libPods-DBPresentorDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3018915068C712C3EC67FA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E91B16306A659E834736C26D /* Pods-DBPresentorDemo.debug.xcconfig */,
+				E45F4AD1F6D096D852581D08 /* Pods-DBPresentorDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E0098B41FC532D500A5EE3A /* DBPresentorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0098CB1FC532D500A5EE3A /* Build configuration list for PBXNativeTarget "DBPresentorDemo" */;
+			buildPhases = (
+				5731C7FBD70C3A0E160F4179 /* [CP] Check Pods Manifest.lock */,
+				6E0098B11FC532D500A5EE3A /* Sources */,
+				6E0098B21FC532D500A5EE3A /* Frameworks */,
+				6E0098B31FC532D500A5EE3A /* Resources */,
+				FB4A85EB25ECEB0AB171F226 /* [CP] Embed Pods Frameworks */,
+				7117379F5DDD834BC4E2D219 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBPresentorDemo;
+			productName = DBPresentorDemo;
+			productReference = 6E0098B51FC532D500A5EE3A /* DBPresentorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E0098AD1FC532D500A5EE3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = DreamBuddy;
+				TargetAttributes = {
+					6E0098B41FC532D500A5EE3A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6E0098B01FC532D500A5EE3A /* Build configuration list for PBXProject "DBPresentorDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E0098AC1FC532D500A5EE3A;
+			productRefGroup = 6E0098B61FC532D500A5EE3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E0098B41FC532D500A5EE3A /* DBPresentorDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E0098B31FC532D500A5EE3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0098C51FC532D500A5EE3A /* LaunchScreen.storyboard in Resources */,
+				6E0098C21FC532D500A5EE3A /* Assets.xcassets in Resources */,
+				6E0098C01FC532D500A5EE3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5731C7FBD70C3A0E160F4179 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DBPresentorDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7117379F5DDD834BC4E2D219 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBPresentorDemo/Pods-DBPresentorDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB4A85EB25ECEB0AB171F226 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBPresentorDemo/Pods-DBPresentorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E0098B11FC532D500A5EE3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0098BD1FC532D500A5EE3A /* ViewController.m in Sources */,
+				6E0098F31FC5896C00A5EE3A /* UIButton+DBActionSheet.m in Sources */,
+				6E0098DA1FC5330300A5EE3A /* DBPresentorContainerViewController.m in Sources */,
+				6E0098DB1FC5330300A5EE3A /* DBPresentorPresentAnimator.m in Sources */,
+				6E0098DC1FC5330300A5EE3A /* DBPresentorViewController.m in Sources */,
+				6E0098E61FC5335800A5EE3A /* DBActionSheet.m in Sources */,
+				6E0098DE1FC5330300A5EE3A /* DBPresentorViewController+Show.m in Sources */,
+				6E0098C81FC532D500A5EE3A /* main.m in Sources */,
+				6E0098EC1FC5351700A5EE3A /* UIView+DBLiner.m in Sources */,
+				6E0098BA1FC532D500A5EE3A /* AppDelegate.m in Sources */,
+				6E0098E81FC5335800A5EE3A /* DBActionSheetAction.m in Sources */,
+				6E0098E71FC5335800A5EE3A /* DBActionSheetConfig.m in Sources */,
+				6E0098DD1FC5330300A5EE3A /* DBPresentorDismissAnimator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E0098BE1FC532D500A5EE3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E0098BF1FC532D500A5EE3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E0098C31FC532D500A5EE3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E0098C41FC532D500A5EE3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E0098C91FC532D500A5EE3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E0098CA1FC532D500A5EE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E0098CC1FC532D500A5EE3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91B16306A659E834736C26D /* Pods-DBPresentorDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DBPresentorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreambuddy.DBPresentorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E0098CD1FC532D500A5EE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E45F4AD1F6D096D852581D08 /* Pods-DBPresentorDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DBPresentorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreambuddy.DBPresentorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E0098B01FC532D500A5EE3A /* Build configuration list for PBXProject "DBPresentorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0098C91FC532D500A5EE3A /* Debug */,
+				6E0098CA1FC532D500A5EE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0098CB1FC532D500A5EE3A /* Build configuration list for PBXNativeTarget "DBPresentorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0098CC1FC532D500A5EE3A /* Debug */,
+				6E0098CD1FC532D500A5EE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E0098AD1FC532D500A5EE3A /* Project object */;
+}
