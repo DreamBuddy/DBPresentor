@@ -19,4 +19,95 @@
 **现在你只需要关注的是
  如何实现UI图上那个自定义视图
  剩下的事情交给DBPresentor**
+ 
+ 经过项目里的长期实战，Presentor已经添加了很多使用的动画，API经过精心调整使用起来更得心应手
 
+```c
+/**
+ 默认使用API
+ CustomView默认居中布局
+
+ @param customView 自定义的View
+ @param presentStyle 显示时的动画当时
+ @param dismissStyle 隐藏时的动画方式
+ @return ViewController实例
+ */
++ (instancetype)makerWithCustomView:(UIView *)customView
+                       presentStyle:(DBPresentorPresentStyle)presentStyle
+                       dismissStyle:(DBPresentorDismissStyle)dismissStyle;
+
+/**
+ 默认使用API
+ CustomView自定义布局方式
+ 
+ @param customView 自定义的View
+ @param customLayout 布局回调，在这里尽兴CustomView的自定义布局
+ @param presentStyle 显示时的动画当时
+ @param dismissStyle 隐藏时的动画方式
+ @return ViewController实例
+ */
++ (instancetype)makerWithCustomView:(UIView *)customView
+                       customLayout:(EXPresentorCustomLayoutBlock)customLayout
+                       presentStyle:(DBPresentorPresentStyle)presentStyle
+                       dismissStyle:(DBPresentorDismissStyle)dismissStyle;
+```
+```c
+/**
+ Present时的动画Style
+ */
+typedef NS_ENUM(NSInteger, DBPresentorPresentStyle) {
+    DBPresentorPresentStyleSystem,                                 // 系统样式
+    DBPresentorPresentStyleFadeIn,                                 // 渐入
+    DBPresentorPresentStyleBounce,                                 // 弹出
+    DBPresentorPresentStyleExpandHorizontal,                       // 水平展开
+    DBPresentorPresentStyleExpandVertical,                         // 垂直展开
+    DBPresentorPresentStyleSlideDown,                              // 从上往下划入
+    DBPresentorPresentStyleSlideUp,                                // 从下往上划入
+    DBPresentorPresentStyleSlideLeft,                              // 从右往左划入
+    DBPresentorPresentStyleSlideRight,                             // 从左往右划入
+};
+
+/**
+ Dismiss时的动画Style
+ */
+typedef NS_ENUM(NSInteger,DBPresentorDismissStyle) {
+    DBPresentorDismissStyleFadeOut,                                 // 渐出
+    DBPresentorDismissStyleContractHorizontal,                      // 水平收起
+    DBPresentorDismissStyleContractVertical,                        // 垂直收起
+    DBPresentorDismissStyleSlideDown,                               // 向下划出
+    DBPresentorDismissStyleSlideUp,                                 // 向上划出
+    DBPresentorDismissStyleSlideLeft,                               // 向左划出
+    DBPresentorDismissStyleSlideRight,                              // 向右划出
+};
+```
+
+```c
+/**
+ 弹出VC 默认方式 后弹出的会遮挡前一个
+ */
+- (void)show;
+
+/**
+ 弹出VC 可选择动画开关
+
+ @param animated 是否启用动画
+ */
+- (void)show:(BOOL)animated;
+
+/**
+ 弹出VC 可选择动画开关 带显示完成的Block
+
+ @param animated 是否启用动画
+ @param completion 显示完成的Block
+ */
+- (void)show:(BOOL)animated completion:(void (^)(void))completion;
+
+/**
+ 弹出VC 可选择动画开关 带显示完成的Block 可选弹窗的弹出等级
+
+ @param animated 是否启用动画
+ @param windowLevel 弹出等级 UIWindowLevel
+ @param completion 显示完成的Block
+ */
+- (void)show:(BOOL)animated windowLevel:(UIWindowLevel)windowLevel completion:(void (^)(void))completion;
+```
