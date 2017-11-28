@@ -17,6 +17,8 @@ typedef void(^EXPresentorCustomLayoutBlock)(UIView *superView);
 
 /**
  外部传入的View
+ 
+ * warning 如果是基于自动布局的需要设置 translatesAutoresizingMaskIntoConstraints = NO
  */
 @property (nonatomic,strong) UIView *contentView;
 
@@ -54,7 +56,7 @@ typedef void(^EXPresentorCustomLayoutBlock)(UIView *superView);
  默认使用API
  CustomView默认居中布局
 
- @param customView 自定义的View
+ @param customView 自定义的View 如果是基于自动布局的需要设置 translatesAutoresizingMaskIntoConstraints = NO
  @param presentStyle 显示时的动画当时
  @param dismissStyle 隐藏时的动画方式
  @return ViewController实例
@@ -67,7 +69,7 @@ typedef void(^EXPresentorCustomLayoutBlock)(UIView *superView);
  默认使用API
  CustomView自定义布局方式
  
- @param customView 自定义的View
+ @param customView 自定义的View 如果是基于自动布局的需要设置 translatesAutoresizingMaskIntoConstraints = NO
  @param customLayout 布局回调，在这里尽兴CustomView的自定义布局
  @param presentStyle 显示时的动画当时
  @param dismissStyle 隐藏时的动画方式
